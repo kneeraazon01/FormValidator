@@ -28,7 +28,14 @@ function checkEmail(input) {
     showError(input, "Email is not valid");
   }
 }
-
+function checkPhone(input) {
+  const Phone = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+  if (input.value.match(Phone)) {
+    showSuccess(input);
+  } else {
+    showError(input, "Phone is not valid");
+  }
+}
 // Check required fields
 function checkRequired(inputArr) {
   inputArr.forEach(function (input) {
@@ -77,5 +84,6 @@ form.addEventListener("submit", function (e) {
   checkLength(username, 3, 15);
   checkLength(password, 6, 25);
   checkEmail(email);
+  checkPhone(phone);
   checkPasswordsMatch(password, password2);
 });
