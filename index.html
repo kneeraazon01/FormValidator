@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validator</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" id="form">
+        <h1>Register To The Site</h1>
+        <div class="form-control">
+          <label for="Full name">Full Name</label>
+          <input type="text" id="fullNname" placeholder="Full name" />
+          <small>Error Message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="username" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="kneeraazon@company.com" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="Phone Number">Phone Number</label>
+          <input type="text" id="phone-number" placeholder="Phone number" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            id="password2"
+            placeholder="Enter password again"
+          />
+          <small>Error Message</small>
+        </div>
+        <div class="button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
