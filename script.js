@@ -1,3 +1,4 @@
+const fullname = document.getElementById("fullname");
 const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
@@ -28,6 +29,8 @@ function checkEmail(input) {
     showError(input, "Email is not valid");
   }
 }
+
+//Check phone number is valid
 function checkPhone(input) {
   const Phone = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
   if (input.value.match(Phone)) {
@@ -81,7 +84,8 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   checkRequired([username, email, phone, password, password2]);
-  checkLength(username, 3, 15);
+  checkLength(username, 3, 25);
+  checkLength(fullname, 5, 20);
   checkLength(password, 6, 25);
   checkEmail(email);
   checkPhone(phone);

@@ -10,7 +10,11 @@
 }
 
 body {
-  background-color: #f9fafb;
+  background-image: linear-gradient(
+    90deg,
+    rgb(65, 65, 114),
+    rgb(184, 128, 128)
+  );
   font-family: "Open Sans", sans-serif;
   display: flex;
   align-items: center;
@@ -22,8 +26,8 @@ body {
 .container {
   background-color: #fff;
   border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  width: 400px;
+  box-shadow: 0 2px 10px rgba(243, 5, 5, 0.3);
+  width: 600px;
 }
 
 h2 {
