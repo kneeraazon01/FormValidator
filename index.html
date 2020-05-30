@@ -3,38 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
     <title>Form Validator</title>
   </head>
   <body>
     <div class="container">
-      <form class="form" id="form">
-        <h1>Register To The Site</h1>
-        <div class="form-control">
-          <label for="Full name">Full Name</label>
-          <input type="text" id="fullNname" placeholder="Full name" />
-          <small>Error Message</small>
-        </div>
-
+      <form id="form" class="form">
+        <h2>Register With Us</h2>
         <div class="form-control">
           <label for="username">Username</label>
-          <input type="text" id="username" placeholder="username" />
-          <small>Error Message</small>
+          <input type="text" id="username" placeholder="Enter username" />
+          <small>Error message</small>
         </div>
         <div class="form-control">
           <label for="email">Email</label>
-          <input type="text" id="email" placeholder="kneeraazon@company.com" />
-          <small>Error Message</small>
+          <input type="text" id="email" placeholder="Enter email" />
+          <small>Error message</small>
         </div>
         <div class="form-control">
-          <label for="Phone Number">Phone Number</label>
-          <input type="text" id="phone-number" placeholder="Phone number" />
-          <small>Error Message</small>
+          <label for="phone">Phone</label>
+          <input type="phone" id="phone" placeholder="Enter Phone Number" />
+          <small>Error message</small>
         </div>
         <div class="form-control">
           <label for="password">Password</label>
           <input type="password" id="password" placeholder="Enter password" />
-          <small>Error Message</small>
+          <small>Error message</small>
         </div>
         <div class="form-control">
           <label for="password2">Confirm Password</label>
@@ -43,13 +38,12 @@
             id="password2"
             placeholder="Enter password again"
           />
-          <small>Error Message</small>
+          <small>Error message</small>
         </div>
-        <div class="button">
-          <button type="submit">Submit</button>
-        </div>
+        <button type="submit">Submit</button>
       </form>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,13 +1,11 @@
-const form = document.getElementById()("form");
-const formControl = document.getElementById("form-control");
-const fullName = document.getElementById("full-name");
+const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
-const phone = document.getElementById("phone-number");
+const phone = document.getElementById("phone");
 const password = document.getElementById("password");
 const password2 = document.getElementById("password2");
 
-// Show input error messages
+// Show input error message
 function showError(input, message) {
   const formControl = input.parentElement;
   formControl.className = "form-control error";
@@ -72,14 +70,12 @@ function getFieldName(input) {
 }
 
 // Event listeners
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-  checkRequired([fullName, username, email, phone, password, password2]);
+  checkRequired([username, email, phone, password, password2]);
   checkLength(username, 3, 15);
   checkLength(password, 6, 25);
   checkEmail(email);
   checkPasswordsMatch(password, password2);
 });
-
-console.log("Success");
